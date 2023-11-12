@@ -1,0 +1,16 @@
+{
+  "manifest_version":3,
+
+  "name":"Korrektur Extension",
+
+  "description":"Korrektur Deutsch Satzen",
+
+  "version": "1.0.0",
+
+  "action":{
+    "default_popup":"index.html"
+  },
+  "icons": {
+    "128": "assets/icon.png"
+  }
+}

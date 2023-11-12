@@ -10,5 +10,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'korrektur-extension';
+
+  onClick(event: any) {
+    console.log(event);
+  }
 }
