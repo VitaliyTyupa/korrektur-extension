@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Open extension API reference",
+  "version": "1.0.0",
+  "icons": {
+    "16": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "background": {
+    "service_worker": "js/service-worker.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "alarms", "activeTab"],
+  "minimum_chrome_version": "102",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["js/content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
